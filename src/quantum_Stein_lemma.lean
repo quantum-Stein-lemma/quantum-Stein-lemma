@@ -44,6 +44,5 @@ lemma log_inf_tends_to_quantum_relative_entropy  :
 ∀ (ε : ℝ) [ε > 0],
 lim at_top (λn:ℕ, log(βmin ρ σ n ε)/n) = - quantum_relative_entropy ρ σ :=
 begin
-  -- follows from the two lemmas above
   sorry,
 end
