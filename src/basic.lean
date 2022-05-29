@@ -9,7 +9,7 @@ class complex_Hilbert_space (V : Type) extends inner_product_space ℂ V :=
 
 variables {ℋ : Type} [complex_Hilbert_space ℋ]
 
-notation ℋ`^⨂`n := ⨂[ℂ]^n ℋ -- set priority
+notation ℋ`^⨂`n:max := ⨂[ℂ]^n ℋ
 
 /-- log of operator -/
 def operator.log {n : ℕ} (ρ : (ℋ^⨂n) →ₗ[ℂ] ℋ^⨂n) : (ℋ^⨂n) →ₗ[ℂ] ℋ^⨂n := sorry
@@ -21,7 +21,7 @@ def tr {n : ℕ} (ρ : (ℋ^⨂n) →ₗ[ℂ] ℋ^⨂n) : ℝ := sorry
 def tensor_pow_vec (σ : (ℋ^⨂1) →ₗ[ℂ] ℋ^⨂1) (n : ℕ) : 
 (ℋ^⨂n) →ₗ[ℂ] ℋ^⨂n := sorry
 
-notation σ`^⊗`n := tensor_pow_vec σ n -- set priority
+notation σ`^⊗`n:max := tensor_pow_vec σ n
 
 /-- Operators can be less than each other -/
 instance {n : ℕ} : has_le ((ℋ^⨂n) →ₗ[ℂ] ℋ^⨂n) := sorry
