@@ -44,6 +44,5 @@ jobs:
         run: |
           ~/.elan/toolchains/stable/bin/leanpkg configure
           wget -q https://raw.githubusercontent.com/leanprover-community/mathlib/master/scripts/detect_errors.py
-          echo "hello"
           ~/.elan/toolchains/stable/bin/lean --json -T100000 --make src | python3 detect_errors.py 
-          ~/.elan/toolchains/stable/bin/lean --json -T100000 --make src | python3 detect_errors.py
+#          ~/.elan/toolchains/stable/bin/lean --json -T100000 --make src | python3 detect_errors.py
