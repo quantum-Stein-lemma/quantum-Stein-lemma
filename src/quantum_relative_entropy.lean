@@ -1,4 +1,4 @@
-import Quantum_state
+import quantum_state
 
 variables
 {ℋ : Type} [complex_Hilbert_space ℋ]
