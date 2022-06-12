@@ -1,4 +1,4 @@
-import Quantum_relative_entropy
+import quantum_relative_entropy
 
 import analysis.special_functions.complex.log
 import order.liminf_limsup
